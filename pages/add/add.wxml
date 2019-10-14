@@ -1,0 +1,12 @@
+<!--pages/add/add.wxml-->
+<view class='page'>
+  <!-- 富本编辑器 -->
+  <view class='page-t'>
+    <textarea class='content' placeholder='请输入文字，不能为空'></textarea>
+  </view>
+
+  <view class='btns'>
+    <view class='sure' bindtap='sure'>确定</view>
+    <view class='cancel' bindtap='cancel'>取消</view>
+  </view>
+</view>

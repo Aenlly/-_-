@@ -1,0 +1,75 @@
+/* pages/list/list.wxss */
+.page{
+  background: #333;
+  /* 定位属性： 1.相对定位 2.绝对定位 3.固定定位 */
+  position: relative;
+}
+.list{
+  position: absolute;
+  top: 0rpx;/* rpx：自适应像素单位 */
+  left: 0rpx;
+  width: 100%;
+  height: 100%;
+}
+
+.list-i{
+  padding: 18rpx 0;
+  /* auto:水平居中 */
+  margin: 15rpx auto;
+  background: #666;
+  width: 90%;
+  /* 边框属性：宽度 样式 颜色 */
+  border: 3rpx solid #fff;
+  /* radius指定半径修改四个角弧度 */
+  border-radius: 20rpx;
+  /* 弹性盒子 */
+  display: flex;
+  /* 排列方向 row行 column列 */
+  flex-direction: column;
+}
+/* 内容 */
+.content{
+  color: wheat;
+  font-size: 35rpx;
+  font-weight: 500;
+  padding: 0 28rpx;
+  height: 118rpx;
+  /* 行高： 垂直居中    要求height=line-height才行*/
+  line-height: 118rpx;
+  border-bottom: 1rpx solid #fff;
+  /* 文字处理的3个属性 */
+  /* 不跨行 */
+  white-space: nowrap;
+  /* 超出标签范围的内容，隐藏 */
+  overflow: hidden;
+  /* 对超出部分，缺省处理 */
+  text-overflow:ellipsis;
+}
+/* 时间样式 */
+.time{
+  padding: 0 28rpx;
+  line-height: 88rpx;
+  color:#fff;
+}
+
+.add{
+  width: 100rpx;
+  height: 100rpx; 
+  position: absolute;
+  right: 58rpx;
+  bottom: 58rpx;
+  background: #b3fbdb;
+  border-radius: 50%;
+  border: 2rpx solid #fff;
+  /* 利用弹性盒子进行水平垂直居中处理 */
+  display: flex;
+  /* 上下居中 */
+  align-items: center;
+  /* 水平居中 */
+  justify-content: center;
+}
+
+.add image{
+  width: 48rpx;
+  height: 48rpx;
+}

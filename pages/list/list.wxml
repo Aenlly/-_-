@@ -1,0 +1,20 @@
+<!--pages/list/list.wxml-->
+<!-- wxml网页内容 wxss网页样式 js脚本 json局部配置（局部优先级>全局） -->
+<!-- 没有宽度和高度的容器，已经在全局中设置了 -->
+<view class='page'>
+  <!-- 滚动模块 -->
+  <!-- 显示内容列表 -->
+  <scroll-view scroll-y='true' class='list'>
+    <block>
+      <view class='list-i'>
+        <view class='content'>内容：</view>
+        <view class='time'>时间：</view>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- 显示跳转按钮 bindtap按下触发 toAdd函数需要在js文件中创建-->
+  <view class='add' bindtap='toAdd'>
+    <image src='../../img/edit.png'></image>
+  </view>
+</view>
